@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_isle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".isle"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+        <Button
+        android:text="Bağlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blue"
+        android:textSize="15sp"
+        android:gravity="left" />
+
+        <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/kamera"
+        opencv:camera_id="any"
+        opencv:show_fps="true"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
+
